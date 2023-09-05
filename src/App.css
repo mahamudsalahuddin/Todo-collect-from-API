@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* ==================for tailwind====================== */
+button[disabled] {
+  @apply bg-gray-300 text-gray-500 cursor-not-allowed;
+}
+
+.pagination {
+  @apply flex justify-between mt-4;
+}
+
+.prev-button, .next-button {
+  @apply  bg-blue-500 text-white px-3 py-1 rounded-lg hover:bg-blue-600 cursor-pointer;
+}
+
+.prev-button[disabled], .next-button[disabled] {
+  @apply bg-gray-300 text-gray-500 cursor-not-allowed;
+}
